@@ -25,9 +25,20 @@ h2{
 button{
     height:2em;
 }
+#left-box{
+    max-width:400px;
+    min-width:300px;
+}
 #submit-RGB{
     margin-left:5px;
 }
 .stretch-box{
     flex:1;
+}
+
+#right-container{
+    height:40%;
+    width:40%;
+    min-height:640px;
+    min-width:640px;
 }

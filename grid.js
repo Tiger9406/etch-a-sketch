@@ -10,10 +10,18 @@ const clear_button=document.querySelector('#clear');
 
 const size_8=document.querySelector('#button_8');
 const size_16=document.querySelector('#button_16');
-const size_32=document.querySelector('#button_322');
+const size_32=document.querySelector('#button_32');
 
 size_8.addEventListener("click", function(){
     drawBox(8);
+});
+
+size_16.addEventListener("click", function(){
+    drawBox(16);
+});
+
+size_32.addEventListener("click", function(){
+    drawBox(32);
 });
 
 function drawBox(size){
