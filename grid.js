@@ -25,6 +25,30 @@ size_32.addEventListener("click", function(){
 });
 
 function drawBox(size){
-    right.innerHTML="<p>hello</p>";
-    console.log(size);
+    const dim = right.offsetHeight/size+"px";
+    const dimBox=size*size+1;
+    right.innerHTML="";
+    for(var i = 1; i < dimBox; i++){
+        let block=document.createElement("div");
+        block.style.width=dim;
+        block.style.height=dim;
+        block.style.backgroundColor="white";
+        right.appendChild(block);
+    }
 }
+
+let isMouseDown = false;
+
+right.addEventListener("mousedown", function() {
+    isMouseDown = true;
+});
+document.addEventListener("mouseup", function() {
+    isMouseDown = false;
+});
+right.addEventListener("mousemove", function(event) {
+    if (isMouseDown) {
+        const target = event.target;
+        console.log(event.target);
+        target.style.backgroundColor = "blue";
+    }
+});

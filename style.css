@@ -37,8 +37,9 @@ button{
 }
 
 #right-container{
-    height:40%;
-    width:40%;
-    min-height:640px;
-    min-width:640px;
+    margin:20px;
+    /* height:40%;
+    width:40%; */
+    height:640px;
+    width:640px;
 }
