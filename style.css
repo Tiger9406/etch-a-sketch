@@ -18,6 +18,7 @@ h2{
 }
 .container{
     display:flex;
+    flex-wrap:wrap;
 }
 .center-box{
     align-items: center;
@@ -26,17 +27,8 @@ button{
     height:2em;
 }
 #submit-RGB{
-    margin:10px;
-}
-.full-box{
-    justify-content:space-between;
+    margin-left:5px;
 }
 .stretch-box{
     flex:1;
-}
-#erase{
-    
-}
-#clear{
-    
 }
