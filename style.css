@@ -6,3 +6,19 @@ h1{
     text-align: center;
     font-size:40px;
 }
+h2{
+
+}
+.RGB{
+    width:15px;
+    height:1.5em;
+}
+.container{
+    display:flex;
+}
+#RGB-div{
+    align-items: center;
+}
+#right-container{
+
+}
