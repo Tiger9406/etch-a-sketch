@@ -1,14 +1,14 @@
 body{
     background-color: rgb(155, 155, 155);
 }
-h1{
-    font-family:'Courier New', Courier, monospace;
-    text-align: center;
-    font-size:40px;
-}
-h2{
 
+#title{
+    padding-top:40px;
+    font-size:40px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
 }
+
 .RGB{
     width:15px;
     height:1.5em;
@@ -19,6 +19,22 @@ h2{
 #RGB-div{
     align-items: center;
 }
+button{
+    height:2em;
+}
+#submit-RGB{
+    margin:10px;
+}
+#erase-clear{
+    justify-content:space-between;
+}
+#erase{
+    flex:1;
+}
+#clear{
+    flex:1;
+}
+
 #right-container{
 
 }
