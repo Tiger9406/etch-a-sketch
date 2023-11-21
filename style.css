@@ -1,6 +1,9 @@
 body{
     background-color: rgb(155, 155, 155);
 }
+h2{
+    margin-right: 10px;
+}
 
 #title{
     padding-top:40px;
@@ -16,7 +19,7 @@ body{
 .container{
     display:flex;
 }
-#RGB-div{
+.center-box{
     align-items: center;
 }
 button{
@@ -25,16 +28,15 @@ button{
 #submit-RGB{
     margin:10px;
 }
-#erase-clear{
+.full-box{
     justify-content:space-between;
 }
-#erase{
+.stretch-box{
     flex:1;
+}
+#erase{
+    
 }
 #clear{
-    flex:1;
-}
-
-#right-container{
-
+    
 }
