@@ -43,3 +43,8 @@ button{
     height:640px;
     width:640px;
 }
+#current-color{
+    height:40px;
+    width:40px;
+    background-color:black;
+}

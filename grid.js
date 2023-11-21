@@ -12,6 +12,9 @@ const size_8=document.querySelector('#button_8');
 const size_16=document.querySelector('#button_16');
 const size_32=document.querySelector('#button_32');
 
+const curr_color=document.querySelector('#current-color');
+
+//draw boxes
 size_8.addEventListener("click", function(){
     drawBox(8);
 });
@@ -23,6 +26,10 @@ size_16.addEventListener("click", function(){
 size_32.addEventListener("click", function(){
     drawBox(32);
 });
+
+eraser_button.addEventListener("click", function(){
+    curr_color.style.backgroundColor="white";
+})
 
 function drawBox(size){
     const dim = right.offsetHeight/size+"px";
@@ -47,8 +54,7 @@ document.addEventListener("mouseup", function() {
 });
 right.addEventListener("mousemove", function(event) {
     if (isMouseDown) {
-        const target = event.target;
-        console.log(event.target);
-        target.style.backgroundColor = "blue";
+        const target = event.target;        
+        target.style.backgroundColor = window.getComputedStyle(curr_color).backgroundColor;
     }
 });
