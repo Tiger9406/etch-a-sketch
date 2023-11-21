@@ -43,8 +43,14 @@ button{
     height:640px;
     width:640px;
 }
+.centered{
+    text-align: center;
+    align-items: center;
+}
+
 #current-color{
-    height:40px;
-    width:40px;
+    margin:10px;
+    height:1.5em;
+    width:1.5em;
     background-color:black;
 }

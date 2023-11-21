@@ -29,7 +29,7 @@ size_32.addEventListener("click", function(){
 
 eraser_button.addEventListener("click", function(){
     curr_color.style.backgroundColor="white";
-})
+});
 
 function drawBox(size){
     const dim = right.offsetHeight/size+"px";
