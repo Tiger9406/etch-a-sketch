@@ -14,6 +14,24 @@ const size_32=document.querySelector('#button_32');
 
 const curr_color=document.querySelector('#current-color');
 
+eraser_button.addEventListener("click", function(){
+    curr_color.style.backgroundColor="white";
+});
+
+clear_button.addEventListener("click", function(){
+    // if(){
+
+    // }
+    // else{
+        
+    // }
+    const childDivs=right.querySelectorAll(".block");
+    childDivs.forEach(function(currentDiv){
+        currentDiv.style.backgroundColor="white";
+        console.log(currentDiv);
+    })
+});
+
 //draw boxes
 size_8.addEventListener("click", function(){
     drawBox(8);
@@ -27,10 +45,6 @@ size_32.addEventListener("click", function(){
     drawBox(32);
 });
 
-eraser_button.addEventListener("click", function(){
-    curr_color.style.backgroundColor="white";
-});
-
 function drawBox(size){
     const dim = right.offsetHeight/size+"px";
     const dimBox=size*size+1;
@@ -39,11 +53,14 @@ function drawBox(size){
         let block=document.createElement("div");
         block.style.width=dim;
         block.style.height=dim;
+        block.className="block";
         block.style.backgroundColor="white";
         right.appendChild(block);
     }
 }
 
+
+//actual drawing
 let isMouseDown = false;
 
 right.addEventListener("mousedown", function() {
