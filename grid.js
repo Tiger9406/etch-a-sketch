@@ -1,8 +1,8 @@
 const right=document.querySelector('#right-container');
 
-const r_input=document.querySelector('#R');
-const g_input=document.querySelector('#G');
-const b_input=document.querySelector('#B');
+const r_input=document.querySelector('#r');
+const g_input=document.querySelector('#g');
+const b_input=document.querySelector('#b');
 const color_button=document.querySelector('#submit-RGB');
 
 const eraser_button=document.querySelector('#erase');
@@ -19,17 +19,16 @@ eraser_button.addEventListener("click", function(){
 });
 
 clear_button.addEventListener("click", function(){
-    // if(){
-
-    // }
-    // else{
-        
-    // }
     const childDivs=right.querySelectorAll(".block");
     childDivs.forEach(function(currentDiv){
         currentDiv.style.backgroundColor="white";
         console.log(currentDiv);
     })
+});
+
+color_button.addEventListener("click", function(){
+    console.log(r_input.value);
+    curr_color.style.backgroundColor='rgb(' + r_input.value + ',' +g_input.value + ',' +b_input.value +')';
 });
 
 //draw boxes
